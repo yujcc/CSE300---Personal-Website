@@ -1,0 +1,87 @@
+* {
+    color: #574844;
+    font-family: 'Raleway', sans-serif;
+}
+
+hr {
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: dotted none none;
+    border-color: black;
+    border-width: 5px;
+    width: 7%;
+}
+
+.navbar-bg-custom {
+    background-color: #F7F5EB;
+    border-bottom: 1px solid #9C8279;
+}
+
+.navbar {
+    transition: top 0.5s;
+}
+  
+.navbar.slide-down {
+    top: 0;
+}
+
+.navbar.slide-up {
+    top: -50px;
+}
+
+.custom-card {
+    height: 500px;
+    background-color: #F7F5EB;
+}
+  
+.footer-bg-custom {
+    background-color: #A0C3D2;
+}
+
+.btn-color {
+    background-color: #A0C3D2;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}
+  
+#home {
+    background-color: #EAC7C7;
+}
+
+#about {
+    background-color: #EAE0DA;
+}
+
+#projects {
+    background-color: #EAE0DA;
+}
+
+#toggle-audio {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 0.5em;
+    color: #fff;
+}
+
+#toggle-audio i {
+    display: block;
+}
+
+#welcome {
+    font-size: xxx-large;
+}

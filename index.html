@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./assets/smiley.ico">
+</head>
+
+<body>
+    <section id="navigation">
+          <nav class="navbar navbar-expand-lg navbar-bg-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#home"><img src="./assets/box.svg" alt="Logo" height="30" class="d-inline-block align-text-top"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#skills" href="#skills">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <!-- Modal -->
+        <div class="modal fade" id="skills" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="skillsLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm modal-dialog-scrollable">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="skillsLabel">Skills</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
+                        <div class="list-group list-group-checkable d-grid gap-2 border-0">
+                          <label class="list-group-item rounded-3 py-3" for="listGroupCheckableRadios1">
+                            Programming Languages
+                            <span class="d-block small opacity-50">
+                                Java 
+                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 33%"></div>
+                                </div>
+                                <br>
+                                Python
+                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 33%"></div>
+                                </div>
+                                <br>
+                                HTML/CSS 
+                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 50%"></div>
+                                </div>
+                                <br>
+                                R 
+                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 10%"></div>
+                                </div>
+                                <br>
+                            </span>
+                          </label>
+                          <label class="list-group-item rounded-3 py-3" for="listGroupCheckableRadios2">
+                            Spoken Languages
+                            <span class="d-block small opacity-50">
+                                English <br>
+                                Chinese (Mandarin & Cantonese) <br>
+                            </span>
+                          </label>
+                          <label class="list-group-item rounded-3 py-3" for="listGroupCheckableRadios3">
+                            Others
+                            <span class="d-block small opacity-50">
+                                Microsoft (Word, PowerPoint, Excel) <br>
+                                Google Suites <br>
+                                Blender <br>
+                                Adobe (Ps, Ai, Pr) <br>
+                                ...
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-2" id="exampleModalLabel">Reach out to me!</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3" action="mailto: yuanjie.chen@stonybrook.edu" method="post" enctype="text/plain">
+                        <div class="form-group col-md-6">
+                            <label for="inputFirstName">First Name</label>
+                            <input type="text" class="form-control" id="inputFirstName" placeholder="Enter first name">
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="inputLastName">Last Name</label>
+                            <input type="text" class="form-control" id="inputLastName" placeholder="Enter last name">
+                          </div>
+                          <div class="form-group col-12">
+                            <label for="inputEmail">Email address</label>
+                            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                          </div>
+                          <div class="form-group">
+                            <label for="inputMessage">Message</label>
+                            <textarea class="form-control" id="inputMessage" rows="3"></textarea>
+                          </div>
+                        <div class="col-12">
+                          <button type="submit" class="btn btn-color">Submit</button>
+                        </div>
+                    </form>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="home">
+        <div class="container-fluid text-center">
+            <div class="row vh-100">
+                <div class="row">
+                    <div class="col">
+                    </div>
+                    <div class="col">
+                    </div>
+                    <div class="col">
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="container-fluid col align-self-end">
+                        <img src="./assets/clouds.svg" class="img-fluid rounded float-end" alt="clouds">
+                    </div>
+                    <div class="container-fluid col align-self-center">
+                        <div class="col-md-12"></div>
+                            <div class="col-md-12 ">
+                                <div id="head-slider" class="transistion">
+                                    <div class="slide-contents">
+                                        <div class="slide">
+                                            <h1 class="im" id="welcome">
+                                                Welcome!
+                                            </h1>
+                                            <p class="header-desc">a student at Stony Brook University.</p>
+                                        </div>
+                                    </div>                      
+                                </div>
+                            </div>
+                    </div>
+                    <div class="container-fluid col align-self-start">
+                        <img src="./assets/clouds.svg" class="img-fluid rounded float-end" alt="clouds">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        
+                    </div>
+                    <div class="col container-fluid align-self-center">
+                        <img src="./assets/birds1.svg" class="img-fluid rounded float-end" alt="birds">
+                    </div>
+                    <div class="col">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container align-items-center">
+        <hr>
+    </div>
+
+    <section id="about">
+        <div class="container-fluid overflow-auto vh-100 col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-10 col-sm-8 col-lg-5">
+                <img src="./assets/cropped-osumeupdatesfavicon-01.png" class="d-block mx-lg-auto img-fluid" alt="mail Logo" width="600" height="400" loading="lazy">
+              </div>
+              <div class="col-lg-7">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">About Me</h1>
+                <p class="lead">Just an average sophomore at Stony Brook University~</p>
+                <p class="lead">Majoring in Information Systems and Applied Mathematics <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-pin" viewBox="0 0 16 16">
+                    <path d="M4.146.146A.5.5 0 0 1 4.5 0h7a.5.5 0 0 1 .5.5c0 .68-.342 1.174-.646 1.479-.126.125-.25.224-.354.298v4.431l.078.048c.203.127.476.314.751.555C12.36 7.775 13 8.527 13 9.5a.5.5 0 0 1-.5.5h-4v4.5c0 .276-.224 1.5-.5 1.5s-.5-1.224-.5-1.5V10h-4a.5.5 0 0 1-.5-.5c0-.973.64-1.725 1.17-2.189A5.921 5.921 0 0 1 5 6.708V2.277a2.77 2.77 0 0 1-.354-.298C4.342 1.674 4 1.179 4 .5a.5.5 0 0 1 .146-.354zm1.58 1.408-.002-.001.002.001zm-.002-.001.002.001A.5.5 0 0 1 6 2v5a.5.5 0 0 1-.276.447h-.002l-.012.007-.054.03a4.922 4.922 0 0 0-.827.58c-.318.278-.585.596-.725.936h7.792c-.14-.34-.407-.658-.725-.936a4.915 4.915 0 0 0-.881-.61l-.012-.006h-.002A.5.5 0 0 1 10 7V2a.5.5 0 0 1 .295-.458 1.775 1.775 0 0 0 .351-.271c.08-.08.155-.17.214-.271H5.14c.06.1.133.191.214.271a1.78 1.78 0 0 0 .37.282z"/>
+                  </svg> Minoring in Digital Arts</p>
+                <p class="lead">Sometimes, I enjoy watching movies, listening to music (classical), playing badminton, taking a stroll, and more<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg></p>
+                <p class="lead">For now, I am not sure with what to do in the future <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-emoji-smile-upside-down" viewBox="0 0 16 16">
+                    <path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zm0-1a8 8 0 1 1 0 16A8 8 0 0 1 8 0z"/>
+                    <path d="M4.285 6.433a.5.5 0 0 0 .683-.183A3.498 3.498 0 0 1 8 4.5c1.295 0 2.426.703 3.032 1.75a.5.5 0 0 0 .866-.5A4.498 4.498 0 0 0 8 3.5a4.5 4.5 0 0 0-3.898 2.25.5.5 0 0 0 .183.683zM7 9.5C7 8.672 6.552 8 6 8s-1 .672-1 1.5.448 1.5 1 1.5 1-.672 1-1.5zm4 0c0-.828-.448-1.5-1-1.5s-1 .672-1 1.5.448 1.5 1 1.5 1-.672 1-1.5z"/>
+                  </svg></p>
+                <p class="lead">I would like internships though.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                  <button type="button" class="btn btn-color btn-lg px-4 me-md-2" data-bs-toggle="modal" data-bs-target="#resumeModal" id="resume"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                  </svg> Resume</button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="resumeModal" tabindex="-1" role="dialog" aria-labelledby="pdfModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title" id="pdfModalLabel">Resume</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <object data="./assets/files/Sophomore Resume (Revised 1).pdf" type="application/pdf" width="100%" height="600px">
+                                </object>
+                                </object>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <a class="icon-link icon-link-hover d-flex align-self-end" href="#">
+                        See a photo here
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-image" viewBox="0 0 16 16">
+                            <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                            <path d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z"/>
+                          </svg>
+                    </a>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container align-items-center">
+        <hr>
+    </div>
+
+    <section id="projects">
+        <div class="container-fluid d-flex gap-3 overflow-auto vh-100 col-xl-10 col-xxl-8 px-4 py-5">
+            <div class="row align-items-center g-lg-5 py-5">
+                <div id="carouselExample" class="carousel slide col-md-10 mx-auto col-lg-5">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="card mx-auto custom-card p-1" style="width: 20rem;">
+                            <img src="./assets/music-note-beamed.svg" class="card-img-top" alt="music note" style="height: 38vh">
+                            <div class="card-body">
+                              <h5 class="card-title">Press Release</h5>
+                              <p class="card-text">A press release I have worked on about our university orchestra for my technical communication class.</p>
+                              <button type="button" class="btn btn-color btn-lg px-4 me-md-2" data-bs-toggle="modal" data-bs-target="#pressRelease"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                              </svg> Click me</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="pressRelease" tabindex="-1" role="dialog" aria-labelledby="pdfModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg" role="document">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h1 class="modal-title" id="pdfModalLabel">Press Release</h1>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <object data="./assets/files/CSE_ISE 300 - Press Release.pdf" type="application/pdf" width="100%" height="600px">
+                                            </object>
+                                            </object>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="card mx-auto custom-card p-1" style="width: 20rem;">
+                            <img src="./assets/blender-1.svg" class="card-img-top" alt="blender icon">
+                            <div class="card-body">
+                              <h5 class="card-title">User Instruction</h5>
+                              <p class="card-text">An user instruction guiding users through making a simple bouncing ball animation in Blender.</p>
+                              <button type="button" class="btn btn-color btn-lg px-4 me-md-2" data-bs-toggle="modal" data-bs-target="#userIns"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                              </svg> Click me</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="userIns" tabindex="-1" role="dialog" aria-labelledby="pdfModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg" role="document">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h1 class="modal-title" id="pdfModalLabel">Press Release</h1>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <object data="./assets/files/CSE_ISE 300 - User Instruction.pdf" type="application/pdf" width="100%" height="600px">
+                                            </object>
+                                            </object>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="card mx-auto custom-card p-1" style="width: 20rem;">
+                            <img src="./assets/house-door.svg" class="card-img-top" alt="house icon" style="height: 37vh">
+                            <div class="card-body">
+                              <h5 class="card-title">Proposal</h5>
+                              <p class="card-text">A problem-solving created to address the housing selection issues at SBU with our proposed solution.</p>
+                              <button type="button" class="btn btn-color btn-lg px-4 me-md-2" data-bs-toggle="modal" data-bs-target="#proposal"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                              </svg> Click me</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="proposal" tabindex="-1" role="dialog" aria-labelledby="pdfModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg" role="document">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h1 class="modal-title" id="pdfModalLabel">Press Release</h1>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <object data="./assets/files/CSE_ISE 300 - Proposal Project Group 8.pdf" type="application/pdf" width="100%" height="600px">
+                                            </object>
+                                            </object>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="card mx-auto custom-card p-1" style="width: 20rem;">
+                            <img src="./assets/file-earmark-play-fill.svg" class="card-img-top" alt="circle icon" style="height: 38vh">
+                            <div class="card-body">
+                              <h5 class="card-title">SPH (Blender)</h5>
+                              <p class="card-text">A short video of a Blender rendered animation generated with some Python script.</p>
+                              <button type="button" class="btn btn-color btn-lg px-4 me-md-2" data-bs-toggle="modal" data-bs-target="#sph"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                              </svg> Click me</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="sph" tabindex="-1" role="dialog" aria-labelledby="pdfModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-xl" role="document">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h1 class="modal-title" id="pdfModalLabel">Video 1</h1>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <object data="./assets/files/0000-0401.mp4" type="application/pdf" width="100%" height="600px">
+                                            </object>
+                                            </object>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="card mx-auto custom-card p-1" style="width: 20rem;">
+                            <img src="./assets/file-earmark-play-fill.svg" class="card-img-top" alt="file icon" style="height: 38vh">
+                            <div class="card-body">
+                              <h5 class="card-title">NBody (Blender)</h5>
+                              <p class="card-text">A short video of a Blender rendered animation generated with some Python script.</p>
+                              <button type="button" class="btn btn-color btn-lg px-4 me-md-2" data-bs-toggle="modal" data-bs-target="#nbody"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                              </svg> Click me</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="nbody" tabindex="-1" role="dialog" aria-labelledby="pdfModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-xl" role="document">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h1 class="modal-title" id="pdfModalLabel">Video 2</h1>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <object data="./assets/files/0000-2001.mp4" type="application/pdf" width="100%" height="600px">
+                                            </object>
+                                            </object>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+              <div class="col-lg-7 text-center text-lg-start align-items-center">
+                <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Some stuff I have done <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg></h1>
+                <p class="col-lg-10 fs-4">Here, you can see some projects I have done for my Technical Communication class.</p>
+                <p class="col-lg-10 fs-4"> You can also see snippets of animation.</p>
+                <p class="col-lg-10 fs-4">Although, I do not have much experience, I am sure there will be much more to come in the future <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-emoji-smile" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
+                  </svg></p>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <footer class="footer mt-auto py-4 footer-bg-custom">
+        <div class="container-lg justify-content-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="d-flex justify-content-start">
+                        <h5>Yuanjie Chen</h5>
+                    </div>
+                    <p>yuanjie.chen@stonybrook.edu</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex justify-content-center">
+                        <a href="#home">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-box-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.004-.001.274-.11a.75.75 0 0 1 .558 0l.274.11.004.001 6.971 2.789Zm-1.374.527L8 5.962 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="text-center">Copyright &copy; YC's 2023</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex justify-content-end">
+                        <h5>Follow</h5>
+                    </div>
+                    <div class="d-flex justify-content-end gap-3">
+                        <a href="https://discord.com/">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+                                <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+        </div>
+    </footer>
+      
+    <section id="bgm">
+        <audio id="myAudio" loop>
+            <source src="./assets/onlymp3.to - Aqua（Instrumental）-dqfLH0opCPk-256k-1658297401491.mp3" type="audio/mp3">
+        </audio>
+        <button id="toggle-audio" onclick="togglePlay()" type="button" class="btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+              </svg>
+        </button>
+          
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+            var previousScroll = 0;
+
+            $(window).scroll(function(){
+                var currentScroll = $(this).scrollTop();
+
+                if (currentScroll > 20 && currentScroll < $(document).height() - $(window).height()){
+                if (currentScroll > previousScroll){
+                    // Scroll down
+                    $('.navbar').removeClass('slide-down').addClass('slide-up');
+                } else {
+                    // Scroll up
+                    $('.navbar').removeClass('slide-up').addClass('slide-down');
+                }
+                previousScroll = currentScroll;
+                }
+            });
+        });
+
+        var audio = document.getElementById("myAudio");
+
+        function togglePlay() {
+            if (audio.paused) {
+            audio.play();
+            } else {
+            audio.pause();
+            }
+        }
+
+    </script>
+
+</body>
+</html>
